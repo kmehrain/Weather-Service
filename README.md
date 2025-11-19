@@ -60,5 +60,6 @@ Optional environment variable:
 
 ## Test
 Run the full test suite:
+<img width="539" height="344" alt="image" src="https://github.com/user-attachments/assets/65f12e76-2126-4730-8bf5-d51b6cc77f03" />
 
  - npm test
