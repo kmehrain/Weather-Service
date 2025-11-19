@@ -18,8 +18,10 @@ Data source: [National Weather Service API](https://www.weather.gov/documentatio
   - the forecast URL for given coordinates, and
   - the "today" forecast period result.
 - If the NWS response shape is unexpected, the service logs a short preview and returns a `502` with a friendly error message.
-- It uses rate limiter at 60 request per min
-- It uses simple cache, in production we would use mem cache lib or AWS mem cache.
+- Uses a lightweight in-memory rate limiter (60 requests per minute per IP) to protect the API.
+- Uses a simple in-memory cache (5-minute TTL).  
+- In production, this would be moved to Redis or a distributed cache.
+
 
 
 ## Requirements
