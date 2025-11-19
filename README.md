@@ -1,4 +1,4 @@
-# Weather-Service
+# Weather-Service Project
 weather service
 # Weather Service (NWS-based)
 
@@ -7,6 +7,18 @@ a basic temperature classification (`hot`, `cold`, `moderate`) for the
 current day at a given latitude/longitude.
 
 Data source: [National Weather Service API](https://www.weather.gov/documentation/services-web-api).
+
+## Requirements
+
+Write an HTTP server that serves the forecasted weather.  
+Your server should expose an endpoint that:
+
+1. **Accepts** latitude and longitude coordinates.
+2. **Returns** the short forecast for that area for **today** (e.g., “Partly Cloudy”).
+3. **Returns** a characterization of whether the temperature is **“hot”**, **“cold”**, or **“moderate”**  
+   (you may choose the exact temperature thresholds).
+4. **Uses** the [National Weather Service API](https://www.weather.gov/documentation/services-web-api) as the data source.
+
 
 > **Note Weather service app**
 ---
