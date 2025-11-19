@@ -20,7 +20,7 @@ Your server should expose an endpoint that:
 4. **Uses** the [National Weather Service API](https://www.weather.gov/documentation/services-web-api) as the data source.
 
 
-> **Note Weather service app**
+> **Note Weather service app**: only supports the Fahrenheit temp. return since it is for NW, however in a bigger project you can use the location of the user through browser permission and convert temp based on user's location.
 ---
 
 ### Implementation Notes
