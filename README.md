@@ -33,7 +33,7 @@ Your server should expose an endpoint that:
 - Uses a lightweight in-memory rate limiter (60 requests per minute per IP) to protect the API.
 - Uses a simple in-memory cache (5-minute TTL).  
 - In production, this would be moved to Redis or a distributed cache.
-- This project supports winston logger and it is added to the server side.
+- This project supports **winston** logger and it is added to the server side.
 
 
 
