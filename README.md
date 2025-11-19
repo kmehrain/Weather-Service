@@ -4,7 +4,7 @@ weather service
 
 Simple Node/TypeScript HTTP service that returns the **short forecast** and
 a basic temperature classification (`hot`, `cold`, `moderate`) for the
-current day at a given latitude/longitude.
+current day at a given latitude/longitude. Only **Fahrenheit** temp is supported for now.  
 
 Data source: [National Weather Service API](https://www.weather.gov/documentation/services-web-api).
 
