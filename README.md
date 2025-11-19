@@ -35,6 +35,8 @@ Optional environment variable:
 ## Setup & Run
  - npm install
  - npm run dev
+ - PS C:\Users\v-kmehrain\Src\weather-service> curl "http://localhost:3000/weather?lat=47.6062&lon=-122.3321"
+{"lat":47.6062,"lon":-122.3321,"shortForecast":"Patchy Fog then Partly Sunny","temperature":{"value":52,"unit":"F"},"category":"moderate"}
 
 ## Test
 Run the full test suite:
