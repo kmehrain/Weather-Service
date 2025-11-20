@@ -3,6 +3,7 @@
 import axios from "axios";
 import { NwsForecastResponse, NwsPointsResponse, NwsForecastPeriod } from "../types/nws";
 import { SimpleCache } from "./simpleCache";
+import logger from "../logger";
 
 const NWS_BASE_URL = "https://api.weather.gov";
 
@@ -50,7 +51,7 @@ export async function getForecastUrl(lat: number, lon: number): Promise<string> 
     !data.properties ||
     typeof data.properties.forecast !== "string"
   ) {
-    console.error("Unexpected NWS /points response", {
+    logger.error("Unexpected NWS /points response", {
       status: res.status,
       preview:
         typeof data === "string"
@@ -77,7 +78,7 @@ export async function getForecastPeriods(forecastUrl: string): Promise<NwsForeca
   const periods: any = data?.properties?.periods;
 
   if (!Array.isArray(periods) || periods.length === 0) {
-    console.error("Unexpected NWS forecast response", {
+    logger.error("Unexpected NWS forecast response", {
       status: res.status,
       preview: JSON.stringify(data).slice(0, 400)
     });

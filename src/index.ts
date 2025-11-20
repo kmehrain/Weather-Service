@@ -1,9 +1,8 @@
-// src/index.ts
-
 import app from "./app";
+import logger from "./logger";
 
 const port = process.env.PORT ?? 3000;
 
 app.listen(port, () => {
-  console.log(`Weather service listening on port ${port}`);
+  logger.info("Weather service listening", { port });
 });
