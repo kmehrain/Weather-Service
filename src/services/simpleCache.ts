@@ -1,6 +1,5 @@
 // src/services/simpleCache.ts
 // Simple in-memory cache. Not distributed, not suitable for multi-instance production.
-// Good enough for this exercise.
 
 type CacheValue<T> = {
   expiresAt: number;

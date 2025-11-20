@@ -7,9 +7,10 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "axios": "^1.13.2",
-    "express": "^5.1.0",
-    "winston": "^3.18.3"
+    "axios": "1.13.2",
+    "express": "5.1.0",
+    "winston": "3.18.3",
+    "zod": "4.1.12"
   },
   "scripts": {
     "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
@@ -23,6 +24,7 @@
     "@types/node": "^24.10.1",
     "@types/supertest": "^6.0.3",
     "jest": "^30.2.0",
+    "nodemon": "3.1.0",
     "supertest": "^7.1.4",
     "ts-jest": "^29.4.5",
     "ts-node-dev": "^2.0.0",

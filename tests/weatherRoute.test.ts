@@ -39,7 +39,9 @@ describe("GET /weather", () => {
   it("returns 400 when lat/lon are missing", async () => {
     const res = await request(app).get("/weather");
     expect(res.status).toBe(400);
-    expect(res.body.error).toMatch(/lat.*lon/i);
+    expect(res.body.error).toBe(
+      "Query parameters 'lat' and 'lon' are required and must be numbers."
+    );
   });
 
   it("returns forecast and classification for valid lat/lon", async () => {
@@ -68,6 +70,9 @@ describe("Additional tests for /weather", () => {
   it("returns 400 for invalid latitude format", async () => {
     const res = await request(app).get("/weather?lat=abc&lon=-122");
     expect(res.status).toBe(400);
+    expect(res.body.error).toBe(
+      "Query parameters 'lat' and 'lon' are required and must be numbers."
+    );
   });
 
   it("returns 400 for out-of-range values", async () => {
