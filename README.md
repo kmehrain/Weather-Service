@@ -10,7 +10,7 @@ current day at a given latitude/longitude. Only **Fahrenheit** temp is supported
 Data source: [National Weather Service API](https://www.weather.gov/documentation/services-web-api).
 
 ## Requirements
-The project uses docker, express, nodejs, typescript, javascript, winson log, rate limiter, cache, async model
+The project uses docker, express, nodejs, typescript, javascript, winson log, rate limiter, cache, async model, using zod
 
 Write an HTTP server that serves the forecasted weather.  
 Your server should expose an endpoint that:
