@@ -58,8 +58,18 @@ Optional environment variable:
  - PS C:\Users\kmehrain\Src\weather-service> curl "http://localhost:3000/weather?lat=47.6062&lon=-122.3321"
 {"lat":47.6062,"lon":-122.3321,"shortForecast":"Patchy Fog then Partly Sunny","temperature":{"value":52,"unit":"F"},"category":"moderate"}
 
+---
+
+## Build and Run local using Docker
+- Build: docker build -t weather-service:local .
+- Run: docker run --rm -p 3000:3000 weather-service:local
+
+---
+
 ## Test
 Run the full test suite:
+ - npm test
+ 
 <img width="539" height="344" alt="image" src="https://github.com/user-attachments/assets/65f12e76-2126-4730-8bf5-d51b6cc77f03" />
 
- - npm test
+
